@@ -15,7 +15,14 @@ int main()
     bn::core::init();
     bn::random rng;
     bn::backdrop::set_color(bn::color(6, 18, 31));
-    bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(17, 32);
+    bn::sprite_ptr myCircle  = bn::sprite_items::dot.create_sprite(55, 57);
+    bn::sprite_ptr myCircle2 = bn::sprite_items::dot.create_sprite(65, 55);
+    bn::sprite_ptr myCircle3 = bn::sprite_items::dot.create_sprite(75, 52);
+    bn::sprite_ptr myCircle4 = bn::sprite_items::dot.create_sprite(85, 55);
+    bn::sprite_ptr myCircle5 = bn::sprite_items::dot.create_sprite(95, 57);
+    bn::sprite_ptr leftEye  = bn::sprite_items::dot.create_sprite(65, 32);
+    bn::sprite_ptr rightEye = bn::sprite_items::dot.create_sprite(85, 32);
+
     bn::vector<bn::sprite_ptr, 1000> circles = {};
     for (int y = -40; y <= 40; y += 15) {
     for(int x = -40; x <= 40; x += 15) {
