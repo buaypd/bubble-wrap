@@ -29,6 +29,20 @@ int main()
     bn::sprite_ptr myCircleLines = bn::sprite_items::dot.create_sprite(x, y);
     circles.push_back(myCircleLines);
     }
+    circles[0].set_scale(2.5);
+    circles[1].set_scale(5.0);
+    circles[2].set_horizontal_scale(4.5);
+    circles[3].set_vertical_scale(4.5);
+    circles[4].set_shear(0.4);
+    circles[5].set_rotation_angle(45);
+    
+     //bn::sprite_palette_ptr blue_palette = bn::sprite_items::dot.palette_item().create_palette();
+     //blue_palette.set_color(1, bn::color(0,0,31));
+
+     //for (size_t i = 0; i < circles.size(); i++)
+     //{
+      // circles[i].set_palette(blue_palette);
+     //}
      
     
 }
